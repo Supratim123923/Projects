@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
+  <style>
+    body {
+      font-family: 'Akaya Telivigala';font-size: 22px;
+      background-image: url('Pic3.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      backface-visibility: visible;
+    }
+    </style>
+  <link rel="stylesheet" href="Style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  
+  <title>Document</title>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <div class="container">
+    <div class="row text-center">
+      <h3 id="myHeader" style="margin-bottom:100% ; background-color:bisque;">
+        Feeling Hungry?
+      </h3>
+      <h5 style="font-size:larger;color:black;background-color: bisque;">Get a random meal by clicking below</h5>
+      <button class="button-primary" id="get_meal" style="border-radius: 25px; margin: 100px; font-size:larger; ">Get Meal 🍔</button>
+  
+    </div>
+    <div id="meal" class="row meal" style="background:transparent;"></div>
+  </div>
+  
+  
+  
+  
+   <!-- SOCIAL PANEL HTML -->
+   
+  <div class="social-panel-container">
+    <div class="social-panel">
+      <p>Created by <i class="fa fa-heart"></i> 
+        <a target="_blank" href="https://florin-pop.com">Supratim SInha</a></p>
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+      <h4>Get in touch on</h4>
+      <ul>
+        <li>
+          <a href="https://twitter.com/florinpop1705" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/florinpop17" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/florinpop17" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/florinpop17" target="_blank">
+            <i class='fa fa-linkedin'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button class="floating-btn"  style="position:fixed; top:0;right: 0; background-color: azure; font-size: medium;font-family:cursive;">
+    Get in Touch
+  </button>
+  
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCc_JY5g03ux1LRIw6TNfTlzq_wXUhmc-I",
+      authDomain: "food-website-350cd.firebaseapp.com",
+      projectId: "food-website-350cd",
+      storageBucket: "food-website-350cd.appspot.com",
+      messagingSenderId: "563941816553",
+      appId: "1:563941816553:web:b3247ba47c240d01e45878",
+      measurementId: "G-8CKZ6BBRM6"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="File.js"></script>
+</body>
+</html>
